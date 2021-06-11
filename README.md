@@ -43,8 +43,12 @@
 - To run a file type `sudo bash ./file_name.sh`.
 - To change a files mode to executable `sudo chmod +x file_name.sh`.
 - Once executable, run a script by making it `sudo ./provision.sh`.
+
+### Environment Variables
+
 - To see environment variables `printenv` or `printenv variable_name`.
-- To create an environment variable `export name_of_variable=value`
+- To create an environment variable `export name_of_variable=value`.
+- These files save the environment variables `~/.bashrc`, `~/.profile`, `~/.bash_profile`.
 
 ### Vagrant
 
@@ -98,4 +102,4 @@ There are two ways you can use chmod and you will see both used. One is shorter 
 ![Flow diagram for vagrant](images/flowdiagram.png)
 
 ### Vagrant Structure
-<img src="images/vagrantdiagram.png" alt="Vagrant Structure diagram" width="800px"/>
+![Vagrant Structure diagram](images/vagrantdiagram.png)
