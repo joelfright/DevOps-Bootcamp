@@ -1,5 +1,10 @@
 # DevOps Bootcamp
 
+## Repos Created During the Course
+
+- [Vagrant and how to set up the environment](https://github.com/joelfright/DevEnvironments/blob/master/Vagrant.md)
+- [Cloud Computing and AWS](https://github.com/joelfright/CloudComputing)
+
 ## Introduction to DevOps
 
 - Breaking down silos and bringing developers and operations closer together
@@ -8,7 +13,7 @@
 - Automate the deployment pipleine as much as possible
 - Supported by strong CI/CD pratices
 
-## Linux commands that also work on Bash
+## Linux Commands
 
 ### Folder and Command Line
 
