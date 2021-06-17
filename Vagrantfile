@@ -6,8 +6,7 @@ Vagrant.configure("2") do |config|
 	app.vm.network "private_network", ip: "192.168.10.100"
 	app.vm.synced_folder "app", "/home/vagrant/app"
 	app.vm.synced_folder "environment", "/home/vagrant/environment"
-	app.vm.provision "shell", inline: "export DB_HOST='mongodb://192.168.10.101:27017/posts'"
-	app.vm.provision "shell", path: "app/provision.sh"
+	app.vm.provision "shell", path: "app/provision.sh", env: {"DB_HOST" => "mongodb://192.168.10.101:27017/posts"}
   end
   
    config.vm.define "db" do |db|

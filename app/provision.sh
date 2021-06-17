@@ -24,8 +24,6 @@ sudo apt-get install nodejs -y
 
 sudo npm install pm2 -g
 
-export DB_HOST="mongodb://192.168.10.101:27017/posts"
-
 cd app
 
 npm install
