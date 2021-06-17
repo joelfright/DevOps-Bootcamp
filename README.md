@@ -1,5 +1,10 @@
 # DevOps Bootcamp
 
+## Repos Created During the Course
+
+- [Vagrant and how to set up the environment](https://github.com/joelfright/DevEnvironments/blob/master/Vagrant.md)
+- [Cloud Computing and AWS](https://github.com/joelfright/CloudComputing)
+
 ## Introduction to DevOps
 
 - Breaking down silos and bringing developers and operations closer together
@@ -8,7 +13,7 @@
 - Automate the deployment pipleine as much as possible
 - Supported by strong CI/CD pratices
 
-## Linux commands that also work on Bash
+## Linux Commands
 
 ### Folder and Command Line
 
@@ -58,6 +63,45 @@
 - To suspend the vagrant `vagrant suspend`.
 - To reload vagrant `vagrant reload`.
 - To destroy vagrant `vagrant destroy`.
+
+### Possible Linux Commands for Interview
+
+- To see hidden files, use `ls -a`
+- The wildcards are `*` for zero or more, `?` for a single character and `[]` to represent a range of characters, for example `ls b*` will lead to `barry.txt blah.txt and bob`.
+- To list processes use `ps -ef`.
+- To kill a specific process use `kill -9 PID`.
+- `bg` is used to resume suspended jobs whilst keep them in the background.
+- `fg` continues a stopped job by running it in the foreground.
+- `r` makes it readable.
+- `w` makes it writable.
+- `x` makes it executable.
+- `777` allows all control.
+- `400` allows the owner to read.
+- `600` allows the owner to read and write.
+- To print the final few lines of a file use `tail`.
+- To print the first few lines of a file use `head`.
+- To sort using a variety of different options use `sort (option) <filename>`.
+- To count a certain type of data use `wc`. Some examples include `-l` for lines or `-w` for words.
+- `Piping` and `redirection` is the means by which we may connect these streams between programs and files to direct data in interesting and useful ways.
+- `STDIN (0)` is a standard input (data fed into the program)
+- `STDOUT (1)` is a standard output (data printed by the program, defaults to the terminal)
+- `STDERR (2)` is a standard error (for error messages, also defaults to the terminal)
+- A simple example of piping and redirection can be seen below where the ls is piped into an output that can then be read like a text file.
+```
+user@bash: ls
+    barry.txt bob example.png firstfile foo1 video.mpeg
+user@bash: ls > myoutput
+user@bash: ls
+    barry.txt bob example.png firstfile foo1 myoutput video.mpeg
+user@bash: cat myoutput
+    barry.txt
+    bob
+    example.png
+    firstfile
+    foo1
+    myoutput
+    video.mpeg
+```
 
 ### Permissions 
 
